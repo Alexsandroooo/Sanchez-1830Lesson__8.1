@@ -1,0 +1,100 @@
+@import "null.css";
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.container {
+	font-family: "lato";
+	max-width: 800px;
+	min-height: 500px;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+.header {
+	margin: 160px 0 40px 0;
+}
+
+.header h2 {
+	text-transform: uppercase;
+	padding: 0 0 20px 0;
+}
+
+.header h1 {
+	font-size: 46px;
+	font-weight: 900;
+}
+
+.menu {
+	max-width: 400px;
+	min-height: 300px;
+}
+.menu li::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+
+	background: url(../img/check.svg) 0 10px / 16px no-repeat;
+	margin: 0 10px 0px 0;
+	min-height: 25px;
+	line-height: 1.4;
+}
+
+.block {
+	max-width: 160px;
+	min-height: 45px;
+	padding: 10px;
+	background: orangered;
+	border: 1px solid orangered;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.block a {
+	color: #fff;
+}
+
+.block:hover {
+	background: red;
+}
+
+.end {
+	font-size: 18px;
+	margin-top: 50px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+		sans-serif;
+}
+
+.end p {
+	margin: 0 0 30px 0;
+}
+
+.end p::after {
+	content: "";
+	display: block;
+	width: 4%;
+	border: 2px solid #000;
+	background: #000;
+}
